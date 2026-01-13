@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 48 48" role="img" aria-label="Spinner arrow">
+  <defs>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Pointer triangle -->
+  <path d="M24 6 L36 22 H12 Z" fill="#1c4b41" stroke="#0f2b24" stroke-width="0.8" filter="url(#shadow)"/>
+  <!-- Hub circle -->
+  <circle cx="24" cy="30" r="8" fill="#ffffff" stroke="#1c4b41" stroke-width="1.6"/>
+</svg>

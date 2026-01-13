@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "SpinPick - Lucky Wheel Chooser",
+  "version": "1.0",
+  "description": "Spin the wheel to make decisions! Add your options and let fate decide with a fun, interactive lucky wheel.",
+  "permissions": [
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}

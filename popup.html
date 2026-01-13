@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SpinPick - Lucky Wheel Chooser</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Left side: Wheel -->
+      <div class="wheel-section">
+        <div class="container">
+          <canvas id="wheel" width="200" height="200"></canvas>
+          <button id="spin-btn">SPIN</button>
+          <img src="spinner-arrow.svg" alt="arrow" />
+        </div>
+        <div id="final-value">
+          <p>Add options and spin!</p>
+        </div>
+      </div>
+
+      <!-- Right side: Options management -->
+      <div class="options-section">
+        <h2>Your Options</h2>
+        
+        <div class="add-option">
+          <input 
+            type="text" 
+            id="option-input" 
+            placeholder="Enter an option..."
+            maxlength="20"
+          />
+          <button id="add-btn" title="Add option">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="5" x2="12" y2="19"></line>
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+            </svg>
+          </button>
+        </div>
+
+        <div id="options-list"></div>
+
+        <div class="controls">
+          <button id="reset-btn" class="control-btn" title="Clear all options">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="3 6 5 6 21 6"></polyline>
+              <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"></path>
+            </svg>
+            Clear All
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Winner notification -->
+    <div id="winner-notification" class="notification hidden">
+      <div class="notification-content">
+        <h3>Winner!</h3>
+        <p id="winner-text"></p>
+        <button id="close-notification">Close</button>
+      </div>
+    </div>
+
+    <!-- Reset confirmation modal -->
+    <div id="reset-confirmation" class="notification hidden">
+      <div class="notification-content">
+        <h3>Clear All Options?</h3>
+        <p>Are you sure you want to delete all options? This action cannot be undone.</p>
+        <div class="modal-actions">
+          <button id="confirm-reset" class="danger-btn">Clear</button>
+          <button id="cancel-reset">Cancel</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="libs/chart.umd.min.js"></script>
+    <script src="libs/chartjs-plugin-datalabels.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>
