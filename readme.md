@@ -32,7 +32,7 @@ Sometimes you just need something to make the choice for you. SpinPick does exac
 
 ## Install
 
-**From Chrome Web Store:** [Install SpinPick](#) *(link coming soon)*
+**From Chrome Web Store:** [Install SpinPick](https://chromewebstore.google.com/detail/spinpick-lucky-wheel-choo/jegkkmdeodigdlkigpeobbjmegpigoof?authuser=0&hl=pt-PT)
 
 **From source:**
 ```bash
